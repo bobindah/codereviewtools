@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  codereviewpairs:
+    image: codereviewpairs
+    build:
+      context: .
+      dockerfile: CodeReviewPairs/Dockerfile
