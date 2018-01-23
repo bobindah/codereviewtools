@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeReviewPairs", "CodeRevi
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{79BB2FD6-D216-46C2-BD0A-9DFBA8481AFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeReviewPairsTests", "..\CodeReviewPairsTests\CodeReviewPairsTests.csproj", "{6B3C6353-79DC-4E16-8631-4B1F029CCA07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeReviewPairsTests", "CodeReviewPairsTests\CodeReviewPairsTests.csproj", "{6B3C6353-79DC-4E16-8631-4B1F029CCA07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
