@@ -18,7 +18,6 @@ namespace CodeReviewPairs.Models
         public string Reviewer { get; private set; }
 
         public string Reviewee { get; private set; }
-
-        public bool IsPair { get { return string.IsNullOrEmpty(Reviewer) == false && string.IsNullOrEmpty(Reviewee); } }
+       
     }
 }

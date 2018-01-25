@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CodeReviewPairs\CodeReviewPairs\CodeReviewPairs.csproj" />
+    <ProjectReference Include="..\CodeReviewTools.Core\CodeReviewTools.Core.csproj" />
   </ItemGroup>
 
 </Project>

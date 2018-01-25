@@ -1,4 +1,5 @@
-using CodeReviewPairs.CoreLogic;
+using CodeReviewPairs.Core;
+using CodeReviewTools.Core;
 using System;
 using System.Collections.Generic;
 using Xunit;
@@ -23,7 +24,7 @@ namespace CodeReviewPairsTests
         public void ShouldReturnEmptyCollectionForOneParticipant()
         {
             List<string> participants = new List<string> { "Dave", };
-            var pairing = Randomiser.GetRandomisedPairings(participants);
+            var pairing = ReviewPairs.GetCodeReviewPairs(participants);
 
             Assert.True(pairing.Count == 0);
         }
@@ -33,7 +34,7 @@ namespace CodeReviewPairsTests
         public void ShouldReturnEmptyCollectionForNoParticipant()
         {
             List<string> participants = new List<string>();
-            var pairing = Randomiser.GetRandomisedPairings(participants);
+            var pairing = ReviewPairs.GetCodeReviewPairs(participants);
 
             Assert.True(pairing.Count == 0);
         }
@@ -44,7 +45,7 @@ namespace CodeReviewPairsTests
         public void ShouldReturnCompletePairsEvenNumberOfParticipants()
         {
             List<string> participants = new List<string> { "Dave", "Fred", "Jenny", "Joe" };
-            var pairing = Randomiser.GetRandomisedPairings(participants);
+            var pairing = Randomiser.GetCodeReviewPairs(participants);
 
             Assert.True(pairing.Count == 2);
         }
@@ -53,9 +54,9 @@ namespace CodeReviewPairsTests
         public void ShouldReturnCompletePairsOddNumberOfParticipants()
         {
             List<string> participants = new List<string> { "Dave", "Fred", "Jenny", "Joe", "John" };
-            var pairing = Randomiser.GetRandomisedPairings(participants);
+            var pairing = Randomiser.GetCodeReviewPairs(participants);
 
-            Assert.True(pairing.Count == 2);
+            Assert.True(pairing.Count == 3);
         }
     }
 }
